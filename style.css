@@ -14,7 +14,6 @@ a{
 nav{
     height: 170px;
     padding-top: 20px;
-    /* position: absolute; */
     background: transparent;
     display: flex;
     gap: 20px;
@@ -50,6 +49,7 @@ nav img{
     align-items: center;
     padding-bottom: 50px;
     border-bottom: 2.5px solid white;
+    overflow: hidden;
 }
 
 .homediv{
@@ -93,18 +93,59 @@ nav img{
 }
 
 #about{
-    height: 100vh;
+    min-height: 100vh;
     background-color:black;
     scroll-behavior: smooth;
     color: white;
-    padding: 30px 0px;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-#about h1{
-    text-align: center;
+#about h2{
+    color: goldenrod;
+    padding: 20px 0px;
+}
+
+#about h3{
+    margin: 10px 0px;
     color: goldenrod;
 }
 
+#about img{
+    width: 99%;
+    transition: 0.5s;
+}
+
+#about img:hover{
+    scale: 105%;
+}
+
+#about span{
+    color: goldenrod;
+}
+
+#about p{
+    padding: 10px 0px;
+}
+
+#about span{
+    border-bottom: 2px solid goldenrod;
+    margin: 0px 3px;
+}
+
+#about ul{
+    list-style: disc;
+    margin-left: 20px;
+}
+
+#about ul li{
+    margin: 4px 0px;
+}
+
+.stark h2{
+    margin-top: 10px;
+}
 
 
 html{
