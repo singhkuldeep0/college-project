@@ -1,103 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
+
 <body>
     <nav>
-        <img src="./images/logo2.jpg" alt="logo">
+        <img src="./images/crown.jpg" alt="logo">
 
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Casting</li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <!-- <li><a href="#about">Reviews</a></li> -->
+            <li>Events</li>
         </ul>
     </nav>
-    <div class="home">
-        <div class="homediv">
-            <div class="homeleft">
-                <div class="homeContent">
-                <h1>Game of Thrones</h1>
-                    <p>
-                        Game of Thrones is a highly acclaimed and widely popular fantasy television series that originally aired on HBO from April 17, 2011, to May 19, 2019. Created by David Benioff and D. B. Weiss, the show is based on the "A Song of Ice and Fire" novels by George R.R. Martin.</p>
+    <div class="wrapper">
+    <div class="content">
+        <div id="home" class="home">
+            <div class="homediv">
+                <div class="homeleft">
+                    <div class="homeContent">
+                        <h1>Game of Thrones</h1>
+                        <p>
+                            Game of Thrones is a highly acclaimed and widely popular fantasy television series that
+                            originally aired on HBO from April 17, 2011, to May 19, 2019. Created by David Benioff and D. B.
+                            Weiss, the show is based on the "A Song of Ice and Fire" novels by George R.R. Martin.</p>
+                    </div>
+                    <div class="btns">
+                        <a href="https://www.youtube.com/watch?v=KPLWWIOCOOQ" target="_blank">
+                            <div class="btn">watch trailer</div>
+                        </a>
+                        <a href="#about">
+                            <div class="btn">read more</div>
+                        </a>
+                    </div>
                 </div>
-                <div class="btns">
-                    <a href="https://www.youtube.com/watch?v=KPLWWIOCOOQ" target="_blank"><div class="btn">watch trailer</div></a>
-                    <a href="#about"><div class="btn">read more</div></a>
-                </div>
+                <img class="homeimg" src="./images/home.jpg" alt="">
             </div>
-                <img class="homeimg" src="./images/home4.jpg" alt="">
-            </div>
-    </div>
-    <div id="about">
-        <!-- <h1>About</h1> -->
-       
-           <h2> What is Game of Thrones?</h2>
-
-<img src="./images/about.jpg" alt="about" />
-
-<h2>The plot</h2>
-
-<p>The show covers the battle between the lords of the continent of Westeros — most notably members of the 
-    <span>Baratheon</span>, 
-    <span>Lannister</span>, and 
-    <span>Stark families</span>
-     — who are involved in the fight for the Iron Throne. This follows the rise of <span>Daenerys Targaryen</span>, the last member of an exiled family as she builds an army in Essos to reclaim the throne.</p>
+        </div>
+        <div id="about">
+            <!-- <h1>About</h1> -->
     
-    <h3>Who are the main characters in Game of Thrones?</h3>
-    <ul>
-        <li>The Targaryens</li>
-        <li>The Starks</li>
-        <li>The Lannisters</li>
-        <li>The Baratheons</li>
-        <li>The Tyrells</li>
-        <li>The Greyjoys</li>
-    </ul>
-    <div class="stark">
-        <h2>The Targaryens</h2>
-        <img src="https://media.glamour.com/photos/5cd306ed0d36451ee721de38/master/w_2560%2Cc_limit/8c25cdbef5f71ceebb6242d7b654ac6c0ed94cce2ad088337a686dbca480913257b862fe1511330dd9e212e9be8c3cb3.jpg" alt="House of Starks"/>
-        <p>House Targaryen's legacy is marked by both glory and tragedy. Their dragons, historical conquest, and the fall of their dynasty have left a lasting impact on the lore and history of Westeros. The return of Daenerys Targaryen to Westeros in the later seasons of "Game of Thrones" reignites interest in the Targaryen legacy and their potential role in the future of the Seven Kingdoms.
-        </p>
-    </div>
-    <div class="stark">
-        <h2>The Starks</h2>
-        <img src="https://screenrant.com/wp-content/uploads/The-Stark-Family-in-Game-of-Thrones.jpg" alt="House of Starks"/>
-        <p>The Stark family hails from the North, a region known for its cold climate and harsh conditions. The family seat is Winterfell, a large castle located in the center of the northern province. The Starks are known for their strong sense of honor, loyalty, and adherence to the principles of the North, which include the motto "Winter is Coming."
-        </p>
-    </div>
-
-    <div class="stark">
-        <h2>The Lannisters</h2>
-        <img src="https://static1.srcdn.com/wordpress/wp-content/uploads/2019/11/featured-image-game-of-thrones-lannisters-ranked-by-intelligence.jpg" alt="House of Starks"/>
-        <p>House Lannister is known for its wealth, symbolized by the vast gold mines at Casterly Rock. The house's sigil is a golden lion on a crimson background, and their unofficial motto is "A Lannister always pays his debts." The Lannisters play a central role in the power struggles, political machinations, and conflicts that define the world of Westeros in "Game of Thrones."
-        </p>
-    </div>
-
-    <div class="stark">
-        <h2>The Baratheons</h2>
-        <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/09/collage-maker-12-sep-2023-04-15-pm-3966-1.jpg?q=50&fit=contain&w=1140&h=&dpr=1.5" alt="House of Starks"/>
-        <p>The conflicts between the Baratheon brothers contribute significantly to the War of the Five Kings, a central plotline in the series. Their individual personalities, ambitions, and the challenges they face in claiming the Iron Throne create a dynamic and complex narrative within the broader political landscape of Westeros.
-        </p>
-    </div>
-
-    <div class="stark">
-        <h2>The Tyrells</h2>
-        <img src="https://bookspotcentral.com/wp-content/uploads/2015/05/Loras-and-Margaery-Tyrell-loras-tyrell.jpg" alt="House of Starks"/>
-        <p>The conflicts between the Baratheon brothers contribute significantly to the War of the Five Kings, a central plotline in the series. Their individual personalities, ambitions, and the challenges they face in claiming the Iron Throne create a dynamic and complex narrative within the broader political landscape of Westeros.
-        </p>
-    </div>
-
-    <div class="stark">
-        <h2>The Greyjoys</h2>
-        <img src="https://screenrant.com/wp-content/uploads/greyjoy-sr-7.jpg"/>
-        <p>House Greyjoy's struggle for independence, adherence to their unique way of life, and internal power dynamics contribute to the complexity of their storyline in "Game of Thrones." Their ambitions often clash with the established order in Westeros, leading to conflict and shaping their role in the broader political landscape.
-        </p>
-    </div>
+            <h2> What is Game of Thrones?</h2>
+    
+            <div class="aboutdiv">
+    
+    
+                <img src="./images/throne.jpg" alt="about" />
+                <div>
+                    <h2>The plot</h2>
+    
+                    <p>The show covers the battle between the lords of the continent of Westeros — most notably members of
+                        the
+                        <span>Baratheon</span>,
+                        <span>Lannister</span>, and
+                        <span>Stark families</span>
+                        — who are involved in the fight for the Iron Throne. This follows the rise of <span>Daenerys
+                            Targaryen</span>, the last member of an exiled family as she builds an army in Essos to reclaim
+                        the throne.
+                    </p>
+    
+                    <h3>Who are the main characters in Game of Thrones?</h3>
+                    <ul>
+                        <li>The Targaryens</li>
+                        <li>The Starks</li>
+                        <li>The Lannisters</li>
+                        <li>The Baratheons</li>
+                        <li>The Tyrells</li>
+                        <li>The Greyjoys</li>
+                    </ul>
+                </div>
+            </div>
+    
+    
+        </div>
 
     </div>
+
+    <div class="rightContent">
+        <h3>Rating and review</h3>
+        <div class="imdb">
+            <p>IMDB Rating</p>
+            <div class="rating">
+                <h2>9.2/10</h2>
+            </div>
+        </div>
+        <p>Game of Thrones has a 9.2 rating on IMDb, is among the best television programs of all time for several reasons including superb performance, epic staging, and sharp writing that brought the characters to life.</p>
     </div>
+  
+</div>
+    
+
+    <!-- <div id="review">
+        <h2>Reviews and ratings</h2>
+        <div class="imdb">
+            <p>Imdb rating</p>
+            <div class="rating">
+                <h2>9.2/10</h2>
+            </div>
+        </div>
+    </div> -->
+
+    <footer>
+        <div>
+            <img src="./images/crown.jpg" alt="logo">
+        </div>
+        <div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li>Events</li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>

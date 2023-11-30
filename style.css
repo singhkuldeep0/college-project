@@ -4,16 +4,23 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    /* background-color: black; */
     /* overflow-x: hidden; */
+}
+
+body{
+    /* background-color: black; */
+    color: white;
 }
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
 nav{
-    height: 170px;
-    padding-top: 20px;
+    height: 200px;
+    padding-top: 10px;
     background: transparent;
     display: flex;
     gap: 20px;
@@ -23,6 +30,8 @@ nav{
    background-color:black;
     width: -webkit-fill-available;
     overflow: hidden;
+    
+    background-color: rgb(46, 46, 46);
 }
 
 nav ul{
@@ -36,13 +45,24 @@ nav ul{
     align-items: center;
 }
 
+nav ul li:hover{
+    color: gold;
+    cursor: pointer;
+}
+
 nav img{
-    /* display: none; */
     height: 60px;
+    border: 4px solid white;
+    transition: 0.4s;
+}
+
+nav img:hover{
+    scale: 1.04;
+    border: 4px solid goldenrod;
 }
 
 .home{
-    height:120vh;
+    min-height:100vh;
     background: black;
     color: white;
     display: flex;
@@ -50,6 +70,7 @@ nav img{
     padding-bottom: 50px;
     border-bottom: 2.5px solid white;
     overflow: hidden;
+    width: 100%;
 }
 
 .homediv{
@@ -59,14 +80,21 @@ nav img{
     flex-direction: column-reverse;
     gap: 30px;
     padding: 0px 10px;
-    height: 120vh;
+    height: 90vh;
 }
 
-
-
 .homediv  .homeimg{
-    height: 600px;
-    /* width: 100%; */
+    max-width:350px;
+    width: 100%;
+    width:min-content;
+    border: 2px solid white;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.homediv  .homeimg:hover{
+    scale: 1.04;
+    border: 4px solid goldenrod;
 }
 
 .btns{
@@ -86,6 +114,11 @@ nav img{
     align-items: center;
 }
 
+.btn:hover{
+    background-color: goldenrod;
+    color: white;
+}
+
 .homeleft{
     display: flex;
     flex-direction: column;
@@ -93,13 +126,15 @@ nav img{
 }
 
 #about{
-    min-height: 100vh;
+    min-height: 90vh;
     background-color:black;
     scroll-behavior: smooth;
     color: white;
     padding: 30px 10px;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    
 }
 
 #about h2{
@@ -113,12 +148,17 @@ nav img{
 }
 
 #about img{
-    width: 99%;
+    max-width:400px;
+    width: 100%;
     transition: 0.5s;
+    border: 4px solid white;
+    
 }
 
 #about img:hover{
     scale: 105%;
+    scale: 1.04;
+    border: 4px solid goldenrod;
 }
 
 #about span{
@@ -143,8 +183,124 @@ nav img{
     margin: 4px 0px;
 }
 
-.stark h2{
-    margin-top: 10px;
+#review{
+    border-top: 2px solid white;
+}
+
+#review h2{
+    text-align: center;
+    padding: 20px 0px;
+    color: goldenrod;
+}
+
+#review .rating{
+    border: 4px solid goldenrod;
+    color: white;
+    width: fit-content;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+#review .imdb{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+}
+
+footer{
+    height: 200px;
+    /* margin-top: 200px; */
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(36, 36, 36);
+}
+
+footer ul{
+    background-color: none;
+    list-style: none;
+}
+
+footer ul li{
+    padding: 10px 0px;
+}
+
+footer ul li:hover{
+    color: gold;
+    cursor: pointer;
+}
+
+footer img{
+    height: 100px;
+    border: 2px solid gold;
+}
+
+
+.wrapper{
+    width: 100%;
+    display: flex;
+}
+
+.content{
+    width: 100%;
+}
+
+.rightContent{
+    display: none;
+    /* width: 30%; */
+    width: 300px;
+    background-color: black;
+    height: 500px;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.rating{
+    height: 90px;
+    width: 90px;
+    border: 4px solid gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.rating:hover{
+    background-color: gold;
+    border-color: white;
+    cursor: pointer;
+    color: black;
+    border-color: black;
+}
+
+.rightContent h3{
+    border-bottom: 2px solid white;
+    padding: 10px;
+}
+
+.imdb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.imdb p{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: gold;
+    font-size: 24px;
 }
 
 
@@ -152,7 +308,7 @@ html{
    scroll-behavior: smooth;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 720px) {    
 
     nav{
         height: 60px;
@@ -160,16 +316,28 @@ html{
         flex-direction: row;
         justify-content: space-between;
         padding: 10px 30px;
+        position: fixed;
+        top: 0;
+        z-index: 10;
     }
 
+    
+.content{
+    width: 70%;
+}
+
     nav img{
-        display: block;
         height: 50px;
+        border-radius: 50px;
     }
 
     nav ul{
         display: flex;
         flex-direction: row;
+    }
+
+    nav ul li{
+        padding: 0px 30px;
     }
 
     .home{
@@ -199,6 +367,13 @@ html{
         gap: 20px;
     }
 
+    .rightContent{
+        display: block;
+        width: 20%;
+        margin:0 auto;
+        margin-top: 100px;
+    }
+
     .homeContent img{
         width:300px;    
     }
@@ -208,5 +383,28 @@ html{
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+    }
+
+    #about{
+        width: 98%;
+        /* margin: auto; */
+    }
+
+    #about h2{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    #about .aboutdiv{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+
+    footer ul {
+        display: flex;
+        gap: 100px;
+        font-size: 20px;
     }
 }
